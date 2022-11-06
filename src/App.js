@@ -27,6 +27,9 @@ function App() {
 
   return (
     <div className='App'>
+      <header>
+        <h1 className='titulo'> Mi Calculadora </h1>
+      </header>
       <div className='contenedorCalculadora'>
         <Valores input = {input}/>
         {/*primer input es  props y el segundo es el valor del estado */}
