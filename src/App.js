@@ -12,12 +12,18 @@ function App() {
   const [input, setInput] = useState('');
 
   const agregarInput = val => {
+
     setInput (input + val);
-  };
+  } ;
 
   const calcularResultado = () => {
-    setInput (evaluate(input))
-  }
+    if (input) {
+      setInput (evaluate(input))
+    } else {
+      alert("para realizar un cálculo ingrega un valor")
+    }
+    
+  };
 
   return (
     <div className='App'>
